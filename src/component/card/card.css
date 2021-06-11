@@ -1,0 +1,45 @@
+   
+    .card{
+         display: flex;
+         flex-direction: column;
+         color:grey;
+         line-height: 25px;
+         letter-spacing: .5px;
+         padding:10px;
+         font-size:15px;
+         cursor:pointer;
+         border-bottom: .5px solid #e5e5e5;
+       }
+      
+    
+    .card :first-child{
+           font-size: 20px;
+           color:#2e302d
+       }
+    .card:hover{
+           background:lavender;
+           border: .5px solid #80808036;
+       }
+    
+    ::-webkit-scrollbar {
+        width: 7px;
+    }
+
+    ::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 2px #80808033; 
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: #8080806b; 
+      border-radius: 8px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #efefef; 
+    }
+    input[type="search"]::-webkit-search-cancel-button {
+      display: none;
+    }
+   

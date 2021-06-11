@@ -3,3 +3,47 @@
     padding: 10px;
     background-color: rgb(189, 183, 183);
 }
+ .search-container{
+         position: relative;
+         width: 100%;
+         display: flex;
+         align-items: center;
+}
+.search-input{
+         padding: 10px 20px 10px 40px;
+         border-radius: 4px;
+         outline: none;
+         border: none;
+         background-color: #80808033;
+         width: 100%;
+         color: grey;
+         font-size: 15px;
+         caret-color: #bebef3
+
+ }
+ input:focus{
+   background: white;
+   border-bottom: 1px solid #80808047;
+       border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+   
+  }
+  .fa-search{
+     position: absolute;
+     left: 10px;
+     color: grey;
+     font-size: 15px;
+     }
+.fa-close{
+     position: absolute;
+     right: 10px;
+     font-size: 15px;
+     font-weight: lighter;
+     color: gray;
+     cursor:pointer
+ }
+.search-input:focus .card-container{
+     display:flex !important;
+}
+.none{
+display:none}
