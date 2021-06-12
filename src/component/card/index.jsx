@@ -1,16 +1,12 @@
 import '../../component/card/card.css'
-function Card(props) {
+function Card({ data, isHighlighted, onSelect }) {
 
     return (
-        
-        props.data&&props.data.map((e,index) => <div key={index} className="card">
-                <span>{e.id}</span>
-                <span>{e.name}</span>
-                <span>{e.address}</span>
-            </div>
-        )
-          
-
+        <div onClick={() => onSelect(data)} className={`card ${isHighlighted ? 'active-highlighted' : ''}`}>
+            <span>{data.id}</span>
+            <span>{data.name}</span>
+            <span>{data.address}</span>
+        </div>
     )
 }
 export default Card;

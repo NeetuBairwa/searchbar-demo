@@ -20,13 +20,19 @@
  }
  .card-container{
   display:flex;
-  max-height: 200px;
+   max-height: 200px;
    box-shadow: 0px 2px 3px 1px #8080804a;
    border-radius: 0px 0px 4px 4px;
    flex-direction: column;
    overflow-y: scroll;
    background:white
 }
-.none{
+.in-visible{
 display:none;
+}
+.card-container>p{
+padding:20px;
+text-align: center;
+font-family: unset;
+color:grey
 }
