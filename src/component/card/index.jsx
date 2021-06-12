@@ -1,13 +1,15 @@
 import '../../component/card/card.css'
 function Card(props) {
-    console.log(props.data)
+
     return (
         
-            <div className="card">
-                <span>{props.data.id}</span>
-                <span>{props.data.name}</span>
-                <span>{props.data.address}</span>
+        props.data&&props.data.map((e,index) => <div key={index} className="card">
+                <span>{e.id}</span>
+                <span>{e.name}</span>
+                <span>{e.address}</span>
             </div>
+        )
+          
 
     )
 }
